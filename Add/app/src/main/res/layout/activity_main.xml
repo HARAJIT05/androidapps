@@ -52,7 +52,7 @@
         android:layout_marginTop="25dp"
         android:onClick="add"
         android:text="Add"
-        app:strokeColor="#E01818" />
+        />
 
     <TextView
         android:id="@+id/restxt"
