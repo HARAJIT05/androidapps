@@ -5,35 +5,35 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="#F2666C"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Radio Button"
+        android:textColor="#F3CBD4"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:text="Radio Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#640D5F"
         app:layout_constraintVertical_bias="0.101" />
 
     <ImageView
         android:id="@+id/imgview"
         android:layout_width="200dp"
         android:layout_height="220dp"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.298"
-        android:scaleType="fitXY"
         tools:srcCompat="@tools:sample/avatars" />
 
     <RadioGroup
@@ -53,32 +53,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="show"
-            android:textColor="#640D5F"
-            android:text="Max Verstppen" />
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#F9F07E"
+            android:text="Max Verstppen"
+            />
 
         <RadioButton
             android:id="@+id/rbtnCarlos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="show"
-            android:textColor="#640D5F"
-            android:text="Carlos Seinz" />
+            android:text="Carlos Seinz"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#F9F07E"/>
 
         <RadioButton
             android:id="@+id/rbtnKimi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="show"
-            android:textColor="#640D5F"
-            android:text="Kimi Raikkonen" />
+            android:text="Kimi Raikkonen"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#F9F07E" />
 
         <RadioButton
             android:id="@+id/rbtnCharls"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="show"
-            android:textColor="#640D5F"
-            android:text="Charles Leclerc" />
+            android:text="Charles Leclerc"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#F9F07E"/>
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
