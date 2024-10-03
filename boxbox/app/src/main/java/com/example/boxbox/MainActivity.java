@@ -34,14 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
         CheckBox cb = findViewById(R.id.cb);
 
-        // Stop any currently playing audio before playing new one
         if (mediaPlayer != null) {
             mediaPlayer.stop();
             mediaPlayer.release();
             mediaPlayer = null;
         }
-
-        // Check which radio button is selected and play the corresponding audio
         if (rb1.isChecked()) {
             i4.setImageDrawable(i1.getDrawable());
             mediaPlayer = MediaPlayer.create(this, R.raw.dududu);
@@ -54,15 +51,15 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast t = Toast.makeText(this, "Please select an image", Toast.LENGTH_SHORT);
             t.show();
-            return;  // Exit the method early if no radio button is selected
+            return;
         }
 
-        // Play the selected audio
+
         if (mediaPlayer != null) {
             mediaPlayer.start();
         }
 
-        // Handle the checkbox for showing or hiding the image
+
         if (cb.isChecked()) {
             i4.setVisibility(View.VISIBLE);
         } else {

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DD</string>
+    <string-array name="drivers">
+        <item>Max Verstappen</item>
+        <item>Charles Leclerc</item>
+        <item>Lando Norris</item>
+        <item>Oscar Piastri</item>
+        <item>Fernando Alonso</item>
+    </string-array>
+</resources>
